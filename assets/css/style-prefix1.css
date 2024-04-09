@@ -852,11 +852,13 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
    text-align: center;
    flex-direction: column;
    padding: 14px;
+  
 
 }
 #page-header h2, 
 #page-header p {
   color: Black;
+  font-family: 'BeVietnam'
 }
 #pagination{
   text-align: center;
