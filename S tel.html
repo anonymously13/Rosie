@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ROSIÉ Cosmetics</title>
-
+  <nav class="desktop-navigation-menu">
+  </nav>
 
 
   <!--
@@ -18,28 +19,32 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style-prefix1.css">
+    
+  
     <link rel="stylesheet" href="./assets/css/product-detail.css">
+    <link rel="stylesheet" href="./style-prefix24.css">
 
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
 
   <!--
     - google font link
   -->
+  <link href='https://fonts.googleapis.com/css?family=Be Vietnam' rel='stylesheet'>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-<div class="header"> 
+  <div class="header">
 
-</div>
+  </div>
 
 
 </head>
@@ -52,7 +57,37 @@
     - MODAL
   -->
 
+  <div class="modal" data-modal>
 
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+          </div>
+
+      
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
 
 
 
@@ -65,18 +100,17 @@
   <div class="notification-toast" data-toast>
 
     <button class="toast-close-btn" data-toast-close>
-      <ion-icon name="close-outline"></ion-icon>
     </button>
 
- 
+
 
     <div class="toast-detail">
 
-  
 
-      
 
-     
+
+
+
 
     </div>
 
@@ -89,15 +123,78 @@
   <!--
     - HEADER
   -->
+
   <header>
-   <div class="header-main">
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p class="mySlides fade"><b>Giao Hàng Miễn Phí</b> Đặt Trong tuần -100.000 VND</p>
+          <p class="mySlides fade"><b>Cuối Mùa Giảm Giá</b> Đến 50%</p>
+          <p class="mySlides fade"><b>Sản Phẩm Mới</b> Mua Hàng Mới Ngay</p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">VND &#8363;</option>
+            <option value="eur">USD &dollar;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">Tiếng Việt</option>
+            <option value="es-ES">English</option>
+            <option value="fr">French</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+ <div class="header-main">
 
       <div class="container">
         <h4>ROSIÉ</h4>
 
         <div class="header-search-container">
 
-          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+          <input type="search" name="search" class="search-field" placeholder="Nhập tên sản phẩm...">
 
           <button class="search-btn">
             <ion-icon name="search-outline"></ion-icon>
@@ -134,11 +231,14 @@
         <ul class="desktop-menu-category-list">
 
           <li class="menu-category">
-            <a href="index.html" class="menu-title">Trang Chủ</a>
+            <a href="index.html" class="menu-title">TRANG CHỦ</a>
+          </li>
+             <li class="menu-category">
+            <a href="gioithieu.html" class="menu-title">GIỚI THIỆU</a>
           </li>
 
           <li class="menu-category">
-            <a href="danhmuc.html" class="menu-title">Danh Mục</a>
+            <a href="danhmuc.html" class="menu-title">SẢN PHẨM</a>
 
             <div class="dropdown-panel">
 
@@ -208,7 +308,10 @@
 
             </div>
           </li>
-
+ <li class="menu-category">
+            <a href="https://forms.gle/PcY9sWrxxtkT6aJG6" class="menu-title">ĐẶT HÀNG</a>
+          </li>
+ 
 
           <li class="menu-category">
             <a href="chinhsach.html" class="menu-title">CHÍNH SÁCH</a>
@@ -233,24 +336,31 @@
 
             </ul>
           </li>
-
-          <li class="menu-category">
-            <a href="gioithieu.html" class="menu-title">GIỚI THIỆU</a>
-          </li>
-
-          <li class="menu-category">
-            <a href="https://forms.gle/PcY9sWrxxtkT6aJG6" class="menu-title">ĐẶT HÀNG</a>
+              <li class="menu-category">
+            <a href="lienhe.html" class="menu-title">LIÊN HỆ</a>
 
 
           </li>
+        
 
+         
 
 
         </ul>
 
       </div>
 
-    </nav>
+</nav>
+
+
+
+
+
+
+
+
+
+
   </header>
 
 
@@ -278,7 +388,7 @@
                                             <img src="https://cocolux.com/storage/upload_image/images/Huy%E1%BB%81n/1801/son-tint-black-rouge-glow-bokki-tint-gb12.jpg" alt="Son Tint Black Rouge Glow Bokki Tint GB12" class="img-fluid">
                                         </div>
                                         <div class="product-price">
-                                                                                            <div class="public-price">165.000đ</div>
+                                                                                            <div class="public-price">165.000 VNĐ</div>
                                                                                                                                     </div>
                                         <div class="product-brand">
                                             
@@ -292,7 +402,7 @@
                                             <img src="https://cocolux.com/storage/upload_image/images/Huy%E1%BB%81n/1801/son-tint-black-rouge-glow-bokki-tint-gb11.jpg" alt="Son Tint Black Rouge Glow Bokki Tint GB11" class="img-fluid">
                                         </div>
                                         <div class="product-price">
-                                                                                            <div class="public-price">165.000đ</div>
+                                                                                            <div class="public-price">165.000 VNĐ</div>
                                                                                                                                     </div>
                                         <div class="product-brand">
                                             
@@ -306,7 +416,7 @@
                                             <img src="https://cocolux.com/storage/upload_image/images/Huy%E1%BB%81n/1801/son-tint-black-rouge-glow-bokki-tint-gb10.jpg" alt="Son Tint Black Rouge Glow Bokki Tint GB10" class="img-fluid">
                                         </div>
                                         <div class="product-price">
-                                                                                            <div class="public-price">165.000đ</div>
+                                                                                            <div class="public-price">165.000 VNĐ</div>
                                                                                                                                     </div>
                                         <div class="product-brand">
                                             
@@ -320,7 +430,7 @@
                                             <img src="https://cocolux.com/storage/upload_image/images/Huy%E1%BB%81n/1801/son-tint-black-rouge-glow-bokki-tint-gb09.jpg" alt="Son Tint Black Rouge Glow Bokki Tint GB09" class="img-fluid">
                                         </div>
                                         <div class="product-price">
-                                                                                            <div class="public-price">165.000đ</div>
+                                                                                            <div class="public-price">165.000 VNĐ</div>
                                                                                                                                     </div>
                                         <div class="product-brand">
                                             
@@ -334,7 +444,7 @@
                                             <img src="https://cocolux.com/storage/upload_image/images/Huy%E1%BB%81n/1801/son-tint-black-rouge-glow-bokki-tint-gb08.jpg" alt="Son Tint Black Rouge Glow Bokki Tint GB08" class="img-fluid">
                                         </div>
                                         <div class="product-price">
-                                                                                            <div class="public-price">165.000đ</div>
+                                                                                            <div class="public-price">165.000 VNĐ</div>
                                                                                                                                     </div>
                                         <div class="product-brand">
                                             
@@ -348,7 +458,7 @@
                                             <img src="https://cocolux.com/storage/upload_image/images/Huy%E1%BB%81n/1801/son-tint-black-rouge-glow-bokki-tint-gb07.jpg" alt="Son Tint Black Rouge Glow Bokki Tint GB07" class="img-fluid">
                                         </div>
                                         <div class="product-price">
-                                                                                            <div class="public-price">165.000đ</div>
+                                                                                            <div class="public-price">165.000 VNĐ</div>
                                                                                                                                     </div>
                                         <div class="product-brand">
                                             
@@ -362,7 +472,7 @@
                                             <img src="https://cocolux.com/storage/upload_image/images/Huy%E1%BB%81n/1801/son-tint-black-rouge-glow-bokki-tint-gb06.jpg" alt="Son Tint Black Rouge Glow Bokki Tint GB06" class="img-fluid">
                                         </div>
                                         <div class="product-price">
-                                                                                            <div class="public-price">165.000đ</div>
+                                                                                            <div class="public-price">165.000 VNĐ</div>
                                                                                                                                     </div>
                                         <div class="product-brand">
                                             
@@ -376,7 +486,7 @@
                                             <img src="https://cocolux.com/storage/upload_image/images/Huy%E1%BB%81n/1801/son-tint-black-rouge-glow-bokki-tint-gb05.jpg" alt="Son Tint Black Rouge Glow Bokki Tint GB05" class="img-fluid">
                                         </div>
                                         <div class="product-price">
-                                                                                            <div class="public-price">165.000đ</div>
+                                                                                            <div class="public-price">165.000 VNĐ</div>
                                                                                                                                     </div>
                                         <div class="product-brand">
                                             
@@ -390,7 +500,7 @@
                                             <img src="https://cocolux.com/storage/upload_image/images/Huy%E1%BB%81n/1801/son-tint-black-rouge-glow-bokki-tint-gb04.jpg" alt="Son Tint Black Rouge Glow Bokki Tint GB04" class="img-fluid">
                                         </div>
                                         <div class="product-price">
-                                                                                            <div class="public-price">165.000đ</div>
+                                                                                            <div class="public-price">165.000 VNĐ</div>
                                                                                                                                     </div>
                                         <div class="product-brand">
                                             
@@ -404,7 +514,7 @@
                                             <img src="https://cocolux.com/storage/upload_image/images/Huy%E1%BB%81n/1801/son-tint-black-rouge-glow-bokki-tint-gb03.jpg" alt="Son Tint Black Rouge Glow Bokki Tint GB03" class="img-fluid">
                                         </div>
                                         <div class="product-price">
-                                                                                            <div class="public-price">165.000đ</div>
+                                                                                            <div class="public-price">165.000 VNĐ</div>
                                                                                                                                     </div>
                                         <div class="product-brand">
                                             
@@ -419,6 +529,8 @@
 
 
 
+
+
   </main>
 
 
@@ -428,6 +540,7 @@
   <!--
     - FOOTER
   -->
+
 
   <footer>
 
@@ -439,70 +552,51 @@
         <ul class="footer-nav-list">
 
           <li class="footer-nav-item">
-            <h2 class="nav-title">SẢN PHẨM NỔI BẬT</h2>
+       <h2 class="nav-title"><a href="danhmuc.html" style="color:white ;">SẢN PHẨM</a></h2>
+             </li>
+
+          <li class="footer-nav-item">
+            <a href="Sson.html" class="footer-nav-link">SON</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">SON</a>
+            <a href="Sphanphu.html" class="footer-nav-link">PHẤN PHỦ</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">EYELINER</a>
+            <a href="Sphanma.html" class="footer-nav-link">PHẤN MÁ</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">PHẤN MÁ</a>
+            <a href="Skemlot.html" class="footer-nav-link">KEM LÓT</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">PHẤN MẮT</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">MASCARA</a>
+            <a href="S KCKD.html" class="footer-nav-link">CHE KHUYẾT ĐIỂM</a>
           </li>
 
         </ul>
 
+        
         <ul class="footer-nav-list">
         
           <li class="footer-nav-item">
-            <h2 class="nav-title">MUA HÀNG</h2>
+       <h2 class="nav-title"><a href="chinhsach.html" style="color:white ;">CHÍNH SÁCH</a></h2>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">GIAO HÀNG</a>
+            <a href="chinhsach 4.html" class="footer-nav-link">CHÍNH SÁCH ĐỔI TRẢ</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">THANH TOÁN AN TOÀN</a>
+            <a href="chinhsach 3.html" class="footer-nav-link">CHÍNH SÁCH THANH TOÁN</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">GIẢM GIÁ</a>
+            <a href="chinhsach2.html" class="footer-nav-link">CHÍNH SÁCH BẢO MẬT</a>
           </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">ĐIỀU KIỆN PHÁP LÝ</a>
-          </li>
-        </ul>
-
-        <ul class="footer-nav-list">
-        
-          <li class="footer-nav-item">
-            <h2 class="nav-title">CHÍNH SÁCH</h2>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">CHÍNH SÁCH ĐỔI TRẢ</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">CHÍNH SÁCH ĐẶT HÀNG</a>
-          </li>
-        
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">CHÍNH SÁCH BẢO MẬT</a>
+           <li class="footer-nav-item">
+            <a href="chinhsach1.html" class="footer-nav-link">CHÍNH SÁCH VẬN CHUYỂN</a>
           </li>
         
         </ul>
@@ -511,7 +605,7 @@
         <ul class="footer-nav-list">
 
           <li class="footer-nav-item">
-            <h2 class="nav-title">LIÊN HỆ</h2>
+            <h2 class="nav-title"><a href="lienhe.html" style="color:white ;">LIÊN HỆ</a></h2>
           </li>
 
           <li class="footer-nav-item flex">
@@ -601,11 +695,6 @@
 
   </footer>
 
-
-
-
-
-
   <!--
     - custom js link
   -->
@@ -618,7 +707,7 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
 </html>
