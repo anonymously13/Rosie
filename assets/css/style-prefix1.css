@@ -852,13 +852,15 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
    text-align: center;
    flex-direction: column;
    padding: 14px;
+  font-family: 'BeVietnam';
+
   
 
 }
 #page-header h2, 
 #page-header p {
   color: Black;
-  font-family: 'BeVietnam'
+  font-family: 'BeVietnam';
 }
 #pagination{
   text-align: center;
@@ -2194,8 +2196,66 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   font-style: normal;
   color: var(--davys-gray);
 }
+#blog{
+    padding: 100px 0 50px;
+    font-family: 'Be Vietnam';
+    
+
+  }
+  #blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  #blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+  }
+#blog img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+  }
+  #blog .blog-img video { /* Targets the video element */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; 
+}
+  #blog .blog-details {
+    width: 50%;
+
+  }
+
+  #blog .blog-details a{
+    text-decoration: none;
+     font-size: 11px;
+     color: #000;
+     font-weight: 700;
+     position: relative;
+     transition: 0.3s;
 
 
+}
+#blog .blog-details h4{
+   text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color: #cd646c;
+
+}
+#blog .blog-details h5{
+   text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: #bc4f54;
+}
+#blog .blog-details .dgaf{
+   text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #71706e;
+}
 
 
 
@@ -3009,7 +3069,7 @@ footer {
     top: 100%;
     left: 0;
     background: var(--white);
-    width: 70%;
+    width: 500%;
     display: -ms-grid;
     display: flex;
 
