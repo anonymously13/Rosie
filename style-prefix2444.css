@@ -2138,7 +2138,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
         text-align: center;
         font-size: 90px;
         font-weight: 900;
-        color: black;
+        color: var(--sonic-silver);
           font-family: 'Be Vietnam';
 
 }
