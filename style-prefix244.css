@@ -2246,7 +2246,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
       text-align: center;
         font-size: 40px;
         font-weight: bold;
-        color: #71796e;
+          color: #fc8eac;
         font-style: italic;
 
 }
