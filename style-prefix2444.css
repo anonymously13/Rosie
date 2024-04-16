@@ -2138,13 +2138,13 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
         text-align: center;
         font-size: 90px;
         font-weight: 900;
-        color: var(--sonic-silver);
+        color: #aaa9ad;
           font-family: 'Be Vietnam';
 
 }
 #page-header.blog-header p{
      
-        color: white;
+        color: #aaa9ad;
           font-family: 'Be Vietnam';
 
 }
