@@ -2262,7 +2262,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
         left: ;
         font-size: 40px;
         font-weight: 600;
-        color: #447241;
+        color: #a52a67;
         z-index: -9;
       
        }
@@ -2277,7 +2277,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
       text-align: center;
         font-size: 50px;
         font-weight: 700;
-        color: #f7f5bc;
+        color: #e27bb1;
         font-family: 'Be Vietnam';
 
   }
