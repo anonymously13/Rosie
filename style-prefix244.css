@@ -2170,7 +2170,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 }
   #blog{
-    padding: 150px 400px 20px;
+    padding: 150px 150px 20px;
       font-family: 'Be Vietnam';
 
   }
@@ -2183,7 +2183,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
     border-image: url(lh4.jpg) 25% repeat;
   }
   #blog .blog-img{
-    width: 50%;
+    width: 100%;
     margin-right: 40px;
   }
 #blog img{
@@ -2196,6 +2196,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   }
   #blog .blog-details .mssv{
     text-align: center;
+
 
   }
  #blog .blog-details .hvt{
