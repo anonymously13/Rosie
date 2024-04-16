@@ -2202,7 +2202,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
  position: absolute;
         top: -100px;
         left: ;
-        font-size: 70px;
+        font-size: 50px;
         font-weight: 600;
         color: #195123;
         z-index: -9;
@@ -2236,12 +2236,10 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
    #blog .blog-details a:hover:after{
     background-color: #088178;
 
-   
+   }
+     
 
-
-      
-
-       }
+  
         #blog .blog-box .blog-details h4{ 
       text-align: center;
         font-size: 40px;
